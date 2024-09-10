@@ -1,6 +1,6 @@
 import { Document } from 'mongoose';
 import { ChallengeStatus } from './challenge-status.enum';
-import { Player } from 'src/players/players.schema';
+import { Player } from 'src/players/player.schema';
 
 export interface Challenge extends Document {
   challengeDate: Date;
