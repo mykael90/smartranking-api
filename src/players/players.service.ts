@@ -50,16 +50,18 @@ export class PlayersService {
   async updatePlayer(
     _id: string,
     updatePlayerDto: UpdatePlayerDto,
-  ): Promise<void> {
+  ): Promise<Player> {
     const playerExists = await this.playerModel.findOne({ _id }).exec();
 
     if (!playerExists) {
       throw new NotFoundException(`Player with id ${_id} not found`);
     }
 
-    await this.playerModel
-      .findOneAndUpdate({ _id }, { $set: updatePlayerDto })
+    const updatePlayer = await this.playerModel
+      .findOneAndUpdate({ _id }, { $set: updatePlayerDto }, { new: true })
       .exec();
+
+    return updatePlayer;
   }
 
   async deletePlayer(_id: string): Promise<void> {

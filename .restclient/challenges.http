@@ -7,7 +7,7 @@ POST {{urlLocal}}
 Content-Type: {{contentType}}
 
 {
-    "challengeDate": "2024-09-14 16:00:00.000",
+    "challengeDate": "2024-09-17 16:00:00.000",
     "requester": "66e0905d1a11f709c4655d9a",
     "players": [
         {

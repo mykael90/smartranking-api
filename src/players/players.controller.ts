@@ -44,7 +44,7 @@ export class PlayersController {
   async updatePlayer(
     @Param('_id', ParamValidationPipe) _id: string,
     @Body() updatePlayerDto: UpdatePlayerDto,
-  ): Promise<void> {
+  ): Promise<Player> {
     return this.playersService.updatePlayer(_id, updatePlayerDto);
   }
 

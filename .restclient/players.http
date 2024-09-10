@@ -30,7 +30,7 @@ PUT {{urlLocal}}/{{player.response.body._id}}
 Content-Type: {{contentType}}
 
 {
-    "phone": "84 99665-5656",
+    "phone": "84 99666-5656",
     "email": "roger_guedes@provider.com",
     "name": "Roger Guedes"
 }
