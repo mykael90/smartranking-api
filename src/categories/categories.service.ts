@@ -37,7 +37,7 @@ export class CategoriesService {
     return await this.categoryModel.find().populate('players').exec();
   }
 
-  async findCategoryById(category: string): Promise<Category> {
+  async findCategoryByCategory(category: string): Promise<Category> {
     const categoryFound = await this.categoryModel.findOne({ category }).exec();
 
     if (!categoryFound) {

@@ -48,7 +48,7 @@ export class ChallengesController {
     );
   }
 
-  @Post('/:challenge/game/')
+  @Post('/:challenge/game')
   async assignChallengeGame(
     @Body(ValidationPipe) assignChallengeGameDto: AssignChallengeGameDto,
     @Param('challenge') _id: string,

@@ -30,11 +30,11 @@ export class CategoriesController {
   async findCategories(
     @Query() params: string[],
   ): Promise<Category[] | Category> {
-    const idCategory = params['idCategory'];
+    const category = params['category'];
     const idPlayer = params['idPlayer'];
 
-    if (idCategory) {
-      return await this.categoriesService.findCategoryById(idCategory);
+    if (category) {
+      return await this.categoriesService.findCategoryByCategory(category);
     }
 
     if (idPlayer) {

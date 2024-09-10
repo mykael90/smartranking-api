@@ -1,0 +1,52 @@
+### Variables
+@urlLocal = {{apiUrl}}/challenges
+@contentType = application/json
+
+### POST Challenge 1
+POST {{urlLocal}}
+Content-Type: {{contentType}}
+
+{
+    "challengeDate": "2024-09-14 16:00:00.000",
+    "requester": "66e0905d1a11f709c4655d9a",
+    "players": [
+        {
+        "_id": "66e0905d1a11f709c4655d9a"
+        },
+        {
+        "_id": "66e09542845eaf07daf43194"
+        }
+    ]
+}
+
+
+### GET all
+GET {{urlLocal}}
+
+
+### PUT
+# @prompt challenge
+PUT {{urlLocal}}/{{challenge}}
+Content-Type: {{contentType}}
+
+{
+    "challengeDate": "2024-09-14 17:00:00.000",
+    "status": "ACCEPTED"
+}
+
+### POST set a game
+# @prompt challenge
+POST {{urlLocal}}/{{challenge}}/game
+Content-Type: {{contentType}}
+
+{
+    "def": "66e09542845eaf07daf43194",
+    "result": [
+        {
+            "set": "6-1"
+        },
+        {
+            "set": "6-2"
+        }
+    ]
+}
