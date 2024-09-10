@@ -3,15 +3,37 @@
 @contentType = application/json
 
 ### POST
+# @name player
 POST {{urlLocal}}
 Content-Type: {{contentType}}
 
 {
     "phone": "84 99665-5656",
-    "email": "maria@provider.com",
-    "name": "Maria Severina"
+    "email": "joao@provider.com",
+    "name": "Joao Severina"
 }
 
 ### GET all
 GET {{urlLocal}}
 
+
+### GET one
+# @prompt playerId
+# @name player
+GET {{urlLocal}}/{{playerId}}
+
+### GET one
+GET {{urlLocal}}/{{player.response.body._id}}
+
+### PUT
+PUT {{urlLocal}}/{{player.response.body._id}}
+Content-Type: {{contentType}}
+
+{
+    "phone": "84 99665-5656",
+    "email": "joao-mudado2@provider.com",
+    "name": "Joao Severina"
+}
+
+### DELETE
+DELETE {{urlLocal}}/{{player.response.body._id}}

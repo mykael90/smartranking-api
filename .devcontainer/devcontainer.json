@@ -18,29 +18,7 @@
 	// connected. This is typically a file mount in .devcontainer/docker-compose.yml
 	"workspaceFolder": "/home/node/smartranking-api",
 	"features": {
-		"ghcr.io/devcontainers/features/common-utils:2": {
-			"installZsh": true,
-			"configureZshAsDefaultShell": true,
-			"installOhMyZsh": true,
-			"installOhMyZshConfig": true,
-			"upgradePackages": true,
-			"username": true,
-			"userUid": "automatic",
-			"userGid": "automatic"
-		},
-		"ghcr.io/devcontainers/features/git:1": {
-			"ppa": true,
-			"version": "os-provided"
-		},
-		"ghcr.io/devcontainers/features/sshd:1": {
-			"version": "latest"
-		},
-		"ghcr.io/nils-geistmann/devcontainers-features/zsh:0": {
-			"setLocale": true,
-			"theme": "robbyrussell",
-			"plugins": "git docker",
-			"desiredLocale": "en_US.UTF-8 UTF-8"
-		},
+		"ghcr.io/devcontainers/features/common-utils:2": {},
 		"ghcr.io/devcontainers/features/node:1": {},
 		"ghcr.io/devcontainers-contrib/features/zsh-plugins:0": {
 		  "plugins": "git F-Sy-H zsh-syntax-highlighting zsh-autosuggestions zsh-completions",
