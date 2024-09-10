@@ -1,0 +1,17 @@
+### Variables
+@urlLocal = {{apiUrl}}/players
+@contentType = application/json
+
+### POST
+POST {{urlLocal}}
+Content-Type: {{contentType}}
+
+{
+    "phone": "84 99665-5656",
+    "email": "maria@provider.com",
+    "name": "Maria Severina"
+}
+
+### GET all
+GET {{urlLocal}}
+
