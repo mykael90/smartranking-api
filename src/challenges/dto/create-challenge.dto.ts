@@ -5,7 +5,7 @@ import {
   IsDateString,
   IsNotEmpty,
 } from 'class-validator';
-import { Player } from 'src/players/interfaces/player.interface';
+import { Player } from 'src/players/players.schema';
 
 export class CreateChallengeDto {
   @IsNotEmpty()

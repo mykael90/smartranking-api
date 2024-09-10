@@ -12,8 +12,8 @@ import {
 import { ParamValidationPipe } from '../common/pipes/param-validation.pipe';
 import { CreatePlayerDto } from './dto/create-player.dto';
 import { UpdatePlayerDto } from './dto/update-player.dto';
-import { Player } from './interfaces/player.interface';
 import { PlayersService } from './players.service';
+import { Player } from './players.schema';
 
 @Controller('api/v1/players')
 export class PlayersController {
