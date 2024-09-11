@@ -14,7 +14,7 @@ import { ChallengesService } from './challenges.service';
 import { AssignChallengeGameDto } from './dto/assign-challenge-game.dto';
 import { CreateChallengeDto } from './dto/create-challenge.dto';
 import { UpdateChallengeDto } from './dto/update-challenge.dto';
-import { Challenge } from './interfaces/challenge.interface';
+import { Challenge } from './challenge.schema';
 import { ChallengeStatusValidationPipe } from './pipes/challenge-status-validation.pipe';
 
 @Controller('api/v1/challenges')

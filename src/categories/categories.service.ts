@@ -8,7 +8,7 @@ import { Model } from 'mongoose';
 import { PlayersService } from 'src/players/players.service';
 import { CreateCategoryDto } from './dto/create-category.dto';
 import { UpdateCategoryDto } from './dto/update-category.dto';
-import { Category } from './interfaces/category.interface';
+import { Category } from './category.schema';
 
 @Injectable()
 export class CategoriesService {

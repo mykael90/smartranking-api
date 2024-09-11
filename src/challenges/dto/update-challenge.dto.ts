@@ -1,5 +1,5 @@
 import { IsOptional } from 'class-validator';
-import { ChallengeStatus } from '../interfaces/challenge-status.enum';
+import { ChallengeStatus } from '../challenge-status.enum';
 
 export class UpdateChallengeDto {
   @IsOptional()

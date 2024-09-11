@@ -3,7 +3,7 @@ import { MongooseModule } from '@nestjs/mongoose';
 import { PlayersModule } from 'src/players/players.module';
 import { CategoriesController } from './categories.controller';
 import { CategoriesService } from './categories.service';
-import { CategorySchema } from './schemas/category.schema';
+import { CategorySchema } from './category.schema';
 
 @Module({
   imports: [

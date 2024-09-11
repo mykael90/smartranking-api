@@ -2,7 +2,7 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 import { Document, Types } from 'mongoose';
 import { ChallengeStatus } from './challenge-status.enum';
 import { Player } from 'src/players/player.schema';
-import { Game } from './game.schemaNew';
+import { Game } from './game.schema';
 
 @Schema({ timestamps: true, collection: 'challenges' })
 export class Challenge extends Document {

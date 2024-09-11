@@ -11,8 +11,9 @@ import { PlayersService } from 'src/players/players.service';
 import { AssignChallengeGameDto } from './dto/assign-challenge-game.dto';
 import { CreateChallengeDto } from './dto/create-challenge.dto';
 import { UpdateChallengeDto } from './dto/update-challenge.dto';
-import { ChallengeStatus } from './interfaces/challenge-status.enum';
-import { Challenge, Game } from './interfaces/challenge.interface';
+import { ChallengeStatus } from './challenge-status.enum';
+import { Challenge } from './challenge.schema';
+import { Game } from './game.schema';
 
 @Injectable()
 export class ChallengesService {

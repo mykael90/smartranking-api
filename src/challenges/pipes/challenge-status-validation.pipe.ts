@@ -1,5 +1,5 @@
 import { BadRequestException, PipeTransform } from '@nestjs/common';
-import { ChallengeStatus } from '../interfaces/challenge-status.enum';
+import { ChallengeStatus } from '../challenge-status.enum';
 
 export class ChallengeStatusValidationPipe implements PipeTransform {
   readonly allowedStatuses = [

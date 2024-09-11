@@ -4,8 +4,9 @@ import { CategoriesModule } from 'src/categories/categories.module';
 import { PlayersModule } from 'src/players/players.module';
 import { ChallengesController } from './challenges.controller';
 import { ChallengesService } from './challenges.service';
-import { ChallengeSchema } from './schemas/challenge.schema';
-import { GameSchema } from './schemas/game.schema';
+import { GameSchema } from './game.schema';
+import { ChallengeSchema } from './challenge.schema';
+
 
 @Module({
   imports: [
