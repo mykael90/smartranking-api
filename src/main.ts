@@ -5,7 +5,7 @@ import { AllExceptionsFilter } from './common/filters/http-exception.filter';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  const port = process.env.PORT || 8080;
+  const port = process.env.PORT || 10000;
   app.useGlobalFilters(new AllExceptionsFilter());
   Date.prototype.toJSON = function (): any {
     return momentTimezone(this)

@@ -9,6 +9,7 @@ services:
       MONGO_USERNAME: root
       MONGO_PASSWORD: example
       MONGO_DATABASE: smartranking
+      PORT: 8080
     volumes:
       - .:/home/node/smartranking-api
     depends_on:
