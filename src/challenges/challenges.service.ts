@@ -185,7 +185,7 @@ export class ChallengesService {
     /**
      * Recover the ID of game and assign to challenge
      */
-    challenge.game = result._id;
+    challenge.game = result;
 
     try {
       await this.challengeModel

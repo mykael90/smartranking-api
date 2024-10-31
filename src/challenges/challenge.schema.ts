@@ -6,6 +6,8 @@ import { Game } from './game.schema';
 
 @Schema({ timestamps: true, collection: 'challenges' })
 export class Challenge extends Document {
+  _id: Types.ObjectId;
+
   @Prop()
   challengeDate: Date;
 

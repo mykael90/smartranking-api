@@ -8,6 +8,8 @@ export interface Result {
 
 @Schema({ timestamps: true, collection: 'games' })
 export class Game extends Document {
+  _id: Types.ObjectId;
+
   @Prop()
   category: string;
 
